@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#141414;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#shine)"/>
+  <!-- Door panel -->
+  <path d="M50,80 L750,80 Q770,80 770,100 L770,520 Q770,540 750,540 L50,540 Q30,540 30,520 L30,100 Q30,80 50,80 Z" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Door handle with chrome -->
+  <rect x="450" y="250" width="200" height="40" rx="20" fill="#181818" stroke="#c9a84c" stroke-width="1"/>
+  <!-- Armrest - freshly painted -->
+  <path d="M100,350 L700,350 L700,430 Q700,440 690,440 L110,440 Q100,440 100,430 Z" fill="#1c1c1c" stroke="#c9a84c" stroke-width="0.8" opacity="0.9"/>
+  <!-- Speaker grille with chrome ring -->
+  <circle cx="200" cy="470" r="40" fill="#111" stroke="#c9a84c" stroke-width="1"/>
+  <circle cx="200" cy="470" r="30" fill="none" stroke="#333" stroke-width="0.5" opacity="0.6"/>
+  <circle cx="200" cy="470" r="20" fill="none" stroke="#333" stroke-width="0.5" opacity="0.5"/>
+  <!-- Premium paint finish - smooth -->
+  <ellipse cx="400" cy="220" rx="200" ry="80" fill="#fff" opacity="0.015"/>
+  <!-- Accent line -->
+  <line x1="100" y1="340" x2="700" y2="340" stroke="#c9a84c" stroke-width="1" opacity="0.4"/>
+  <!-- Subtle sheen -->
+  <ellipse cx="350" cy="180" rx="120" ry="30" fill="#fff" opacity="0.02" transform="rotate(-5 350 180)"/>
+</svg>

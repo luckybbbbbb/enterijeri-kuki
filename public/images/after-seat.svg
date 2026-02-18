@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#141414;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#shine)"/>
+  <!-- Seat backrest -->
+  <path d="M250,80 Q260,60 400,55 Q540,60 550,80 L560,340 Q400,360 240,340 Z" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Premium leather texture -->
+  <ellipse cx="400" cy="200" rx="90" ry="60" fill="#1e1e1e" opacity="0.5"/>
+  <!-- Seat cushion -->
+  <path d="M220,350 Q230,340 400,335 Q570,340 580,350 L600,480 Q400,510 200,480 Z" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Gold stitching -->
+  <line x1="330" y1="80" x2="320" y2="340" stroke="#c9a84c" stroke-width="1.5" stroke-dasharray="4,5" opacity="0.8"/>
+  <line x1="470" y1="80" x2="480" y2="340" stroke="#c9a84c" stroke-width="1.5" stroke-dasharray="4,5" opacity="0.8"/>
+  <line x1="400" y1="70" x2="400" y2="340" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,5" opacity="0.5"/>
+  <!-- Cushion stitching -->
+  <line x1="310" y1="360" x2="300" y2="480" stroke="#c9a84c" stroke-width="1.5" stroke-dasharray="4,5" opacity="0.7"/>
+  <line x1="490" y1="360" x2="500" y2="480" stroke="#c9a84c" stroke-width="1.5" stroke-dasharray="4,5" opacity="0.7"/>
+  <!-- Side bolsters -->
+  <path d="M240,100 Q220,200 220,340 L250,340 Q260,200 260,100 Z" fill="#161616" stroke="#c9a84c" stroke-width="0.5" opacity="0.9"/>
+  <path d="M560,100 Q580,200 580,340 L550,340 Q540,200 540,100 Z" fill="#161616" stroke="#c9a84c" stroke-width="0.5" opacity="0.9"/>
+  <!-- Headrest -->
+  <rect x="330" y="20" width="140" height="50" rx="20" fill="#181818" stroke="#c9a84c" stroke-width="0.5"/>
+  <!-- Shine highlight -->
+  <ellipse cx="380" cy="180" rx="50" ry="20" fill="#fff" opacity="0.03" transform="rotate(-10 380 180)"/>
+</svg>

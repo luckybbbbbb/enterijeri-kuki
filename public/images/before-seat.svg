@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2218;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1510;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Seat backrest -->
+  <path d="M250,80 Q260,60 400,55 Q540,60 550,80 L560,340 Q400,360 240,340 Z" fill="#3a3020" stroke="#4a4030" stroke-width="1"/>
+  <!-- Wear on backrest -->
+  <ellipse cx="400" cy="180" rx="80" ry="50" fill="#4a3a25" opacity="0.5"/>
+  <ellipse cx="380" cy="200" rx="40" ry="25" fill="#5a4a30" opacity="0.3"/>
+  <!-- Seat cushion -->
+  <path d="M220,350 Q230,340 400,335 Q570,340 580,350 L600,480 Q400,510 200,480 Z" fill="#3a3020" stroke="#4a4030" stroke-width="1"/>
+  <!-- Wear on cushion -->
+  <ellipse cx="400" cy="420" rx="100" ry="30" fill="#4a3a25" opacity="0.5"/>
+  <!-- Stitching (worn) -->
+  <line x1="330" y1="80" x2="320" y2="340" stroke="#5a4a30" stroke-width="1" stroke-dasharray="6,8" opacity="0.4"/>
+  <line x1="470" y1="80" x2="480" y2="340" stroke="#5a4a30" stroke-width="1" stroke-dasharray="6,8" opacity="0.4"/>
+  <!-- Side bolsters -->
+  <path d="M240,100 Q220,200 220,340 L250,340 Q260,200 260,100 Z" fill="#352a1a" opacity="0.7"/>
+  <path d="M560,100 Q580,200 580,340 L550,340 Q540,200 540,100 Z" fill="#352a1a" opacity="0.7"/>
+  <!-- Cracks/damage -->
+  <path d="M370,160 Q380,170 375,185 Q385,195 380,205" fill="none" stroke="#5a4a30" stroke-width="1.5" opacity="0.5"/>
+  <path d="M420,390 Q430,400 425,415" fill="none" stroke="#5a4a30" stroke-width="1.5" opacity="0.5"/>
+  <!-- Headrest -->
+  <rect x="330" y="20" width="140" height="50" rx="20" fill="#352a1a" stroke="#4a4030" stroke-width="1"/>
+</svg>

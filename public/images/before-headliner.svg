@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3530;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2a2520;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Headliner surface -->
+  <path d="M0,50 Q400,0 800,50 L800,550 Q400,600 0,550 Z" fill="#d4c8b0" opacity="0.3"/>
+  <!-- Sagging/drooping areas -->
+  <path d="M200,150 Q400,250 600,150" fill="none" stroke="#b0a890" stroke-width="2" opacity="0.3"/>
+  <path d="M150,250 Q400,350 650,250" fill="none" stroke="#b0a890" stroke-width="2" opacity="0.3"/>
+  <path d="M180,350 Q400,420 620,350" fill="none" stroke="#b0a890" stroke-width="1.5" opacity="0.25"/>
+  <!-- Stains -->
+  <ellipse cx="300" cy="200" rx="60" ry="40" fill="#8a7a60" opacity="0.3"/>
+  <ellipse cx="520" cy="350" rx="45" ry="30" fill="#8a7a60" opacity="0.25"/>
+  <ellipse cx="400" cy="280" rx="35" ry="20" fill="#7a6a50" opacity="0.2"/>
+  <!-- Fabric texture (worn) -->
+  <line x1="100" y1="100" x2="700" y2="100" stroke="#a09880" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#a09880" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#a09880" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#a09880" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="500" x2="700" y2="500" stroke="#a09880" stroke-width="0.5" opacity="0.2"/>
+  <!-- Sunroof outline -->
+  <rect x="280" y="100" width="240" height="180" rx="15" fill="none" stroke="#5a5040" stroke-width="2" opacity="0.4"/>
+  <!-- Peeling edges -->
+  <path d="M180,80 Q190,120 200,80" fill="none" stroke="#b0a080" stroke-width="1.5" opacity="0.4"/>
+  <path d="M600,90 Q610,130 620,90" fill="none" stroke="#b0a080" stroke-width="1.5" opacity="0.4"/>
+</svg>

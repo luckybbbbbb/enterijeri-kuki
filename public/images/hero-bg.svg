@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1510;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#0a0a0a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#141210;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="40%" r="40%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="70%" cy="60%" r="35%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0"/>
+    </radialGradient>
+    <pattern id="leather" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#0e0e0e"/>
+      <rect x="0" y="0" width="10" height="10" fill="#111" opacity="0.5"/>
+      <rect x="10" y="10" width="10" height="10" fill="#111" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#leather)" opacity="0.3"/>
+  <rect width="1920" height="1080" fill="url(#glow1)"/>
+  <rect width="1920" height="1080" fill="url(#glow2)"/>
+  <!-- Dashboard silhouette -->
+  <path d="M0,600 Q480,500 960,520 Q1440,540 1920,480 L1920,750 Q960,800 0,750 Z" fill="#151210" opacity="0.6"/>
+  <!-- Steering wheel silhouette -->
+  <circle cx="500" cy="680" r="200" fill="none" stroke="#1a1510" stroke-width="45" opacity="0.4"/>
+  <circle cx="500" cy="680" r="200" fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="6,10" opacity="0.1"/>
+  <!-- Center console lines -->
+  <path d="M900,550 L900,1080" stroke="#1a1510" stroke-width="2" opacity="0.3"/>
+  <path d="M1000,520 L1000,1080" stroke="#1a1510" stroke-width="2" opacity="0.3"/>
+  <!-- Ambient lighting line -->
+  <path d="M0,700 Q480,650 960,670 Q1440,690 1920,650" stroke="#c9a84c" stroke-width="2" opacity="0.08"/>
+  <path d="M0,702 Q480,652 960,672 Q1440,692 1920,652" stroke="#c9a84c" stroke-width="6" opacity="0.03"/>
+  <!-- Stitching pattern accents -->
+  <line x1="200" y1="750" x2="700" y2="730" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,8" opacity="0.06"/>
+  <line x1="1200" y1="700" x2="1800" y2="720" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,8" opacity="0.06"/>
+</svg>

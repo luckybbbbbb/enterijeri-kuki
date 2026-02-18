@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#121212;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="40%" cy="38%" r="55%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#shine)"/>
+  <!-- Flat-bottom steering wheel -->
+  <path d="M220,300 A180,180 0 1,1 580,300 L560,340 Q400,360 240,340 Z" fill="none" stroke="#1e1e1e" stroke-width="40"/>
+  <path d="M220,300 A180,180 0 1,1 580,300 L560,340 Q400,360 240,340 Z" fill="none" stroke="#252525" stroke-width="36"/>
+  <path d="M220,300 L580,300" stroke="#252525" stroke-width="36" stroke-linecap="round"/>
+  <!-- Gold stitching on rim -->
+  <path d="M220,300 A180,180 0 1,1 580,300" fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,6" opacity="0.7" transform="translate(0,-20)"/>
+  <path d="M220,300 A180,180 0 1,1 580,300" fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,6" opacity="0.7" transform="translate(0,20)"/>
+  <!-- Center pad -->
+  <rect x="340" y="240" width="120" height="80" rx="10" fill="#161616" stroke="#c9a84c" stroke-width="1.5" opacity="0.9"/>
+  <!-- Spokes with metallic finish -->
+  <rect x="370" y="320" width="60" height="70" rx="5" fill="#1a1a1a" stroke="#c9a84c" stroke-width="0.8"/>
+  <line x1="340" y1="280" x2="280" y2="260" stroke="#1e1e1e" stroke-width="12" stroke-linecap="round"/>
+  <line x1="460" y1="280" x2="520" y2="260" stroke="#1e1e1e" stroke-width="12" stroke-linecap="round"/>
+  <line x1="340" y1="280" x2="280" y2="260" stroke="#c9a84c" stroke-width="0.8" opacity="0.4"/>
+  <line x1="460" y1="280" x2="520" y2="260" stroke="#c9a84c" stroke-width="0.8" opacity="0.4"/>
+  <!-- Alcantara grip markers -->
+  <ellipse cx="250" cy="240" rx="20" ry="35" fill="#2a2a2a" opacity="0.5" transform="rotate(-20 250 240)"/>
+  <ellipse cx="550" cy="240" rx="20" ry="35" fill="#2a2a2a" opacity="0.5" transform="rotate(20 550 240)"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#141414;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0e0e0e;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#0e0e0e;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#shine)"/>
+  <!-- Clean headliner surface -->
+  <path d="M0,50 Q400,0 800,50 L800,550 Q400,600 0,550 Z" fill="#1c1c1c" opacity="0.8"/>
+  <!-- Alcantara texture lines -->
+  <line x1="100" y1="100" x2="700" y2="100" stroke="#252525" stroke-width="0.5" opacity="0.5"/>
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#252525" stroke-width="0.5" opacity="0.5"/>
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#252525" stroke-width="0.5" opacity="0.5"/>
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#252525" stroke-width="0.5" opacity="0.5"/>
+  <line x1="100" y1="500" x2="700" y2="500" stroke="#252525" stroke-width="0.5" opacity="0.5"/>
+  <!-- Sunroof outline with chrome trim -->
+  <rect x="280" y="100" width="240" height="180" rx="15" fill="#111" stroke="#c9a84c" stroke-width="1.5" opacity="0.6"/>
+  <!-- Clean stitching accents -->
+  <line x1="80" y1="80" x2="80" y2="520" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,6" opacity="0.4"/>
+  <line x1="720" y1="80" x2="720" y2="520" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,6" opacity="0.4"/>
+  <!-- Subtle sheen -->
+  <ellipse cx="400" cy="250" rx="200" ry="80" fill="#fff" opacity="0.015"/>
+</svg>

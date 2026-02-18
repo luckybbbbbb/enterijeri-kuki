@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#shine)"/>
+  <!-- Dashboard -->
+  <path d="M0,200 Q400,150 800,200 L800,320 Q400,350 0,320 Z" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Windshield area -->
+  <path d="M0,0 L800,0 L800,200 Q400,150 0,200 Z" fill="#0e0e0e" opacity="0.8"/>
+  <!-- Steering wheel -->
+  <circle cx="250" cy="380" r="100" fill="none" stroke="#222" stroke-width="24"/>
+  <circle cx="250" cy="380" r="100" fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,6" opacity="0.5"/>
+  <circle cx="250" cy="380" r="30" fill="#161616" stroke="#c9a84c" stroke-width="1"/>
+  <!-- Center console -->
+  <rect x="350" y="320" width="100" height="280" rx="5" fill="#181818" stroke="#c9a84c" stroke-width="0.8" opacity="0.9"/>
+  <!-- Infotainment screen -->
+  <rect x="320" y="210" width="160" height="90" rx="5" fill="#0a0a0a" stroke="#c9a84c" stroke-width="1"/>
+  <!-- Ambient light glow -->
+  <line x1="0" y1="320" x2="800" y2="350" stroke="#c9a84c" stroke-width="2" opacity="0.15"/>
+  <!-- Door card -->
+  <path d="M0,250 L0,600 L80,600 L100,250 Z" fill="#1a1a1a" stroke="#c9a84c" stroke-width="0.5"/>
+  <!-- Passenger seat -->
+  <path d="M550,300 L750,300 Q770,300 770,320 L770,550 L530,550 L530,320 Q530,300 550,300 Z" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Seat gold stitching -->
+  <line x1="640" y1="310" x2="640" y2="540" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,5" opacity="0.6"/>
+  <!-- Dashboard sheen -->
+  <ellipse cx="400" cy="260" rx="200" ry="20" fill="#fff" opacity="0.015"/>
+</svg>

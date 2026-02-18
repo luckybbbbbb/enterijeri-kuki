@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2520;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1510;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Center console surface -->
+  <path d="M200,50 L600,50 Q620,50 620,70 L620,570 Q620,590 600,590 L200,590 Q180,590 180,570 L180,70 Q180,50 200,50 Z" fill="#352e22" stroke="#454035" stroke-width="1"/>
+  <!-- Shifter boot (worn leather) -->
+  <path d="M300,200 Q310,180 400,175 Q490,180 500,200 L510,350 Q400,370 290,350 Z" fill="#3a3020" stroke="#4a4030" stroke-width="1"/>
+  <!-- Shifter knob -->
+  <ellipse cx="400" cy="175" rx="35" ry="25" fill="#3a3020" stroke="#4a4030" stroke-width="1.5"/>
+  <ellipse cx="400" cy="165" rx="30" ry="15" fill="#352a1a"/>
+  <!-- Worn/cracked leather on boot -->
+  <path d="M340,220 Q360,240 350,260" fill="none" stroke="#5a4a30" stroke-width="1" opacity="0.5"/>
+  <path d="M430,230 Q450,250 445,270" fill="none" stroke="#5a4a30" stroke-width="1" opacity="0.5"/>
+  <!-- Stitching (worn) -->
+  <line x1="350" y1="200" x2="340" y2="350" stroke="#5a4a30" stroke-width="1" stroke-dasharray="5,8" opacity="0.35"/>
+  <line x1="450" y1="200" x2="460" y2="350" stroke="#5a4a30" stroke-width="1" stroke-dasharray="5,8" opacity="0.35"/>
+  <!-- Cup holders -->
+  <circle cx="320" cy="450" r="35" fill="#2a2418" stroke="#454035" stroke-width="1"/>
+  <circle cx="480" cy="450" r="35" fill="#2a2418" stroke="#454035" stroke-width="1"/>
+  <!-- Scuff marks -->
+  <ellipse cx="400" cy="280" rx="40" ry="15" fill="#4a3a25" opacity="0.3"/>
+</svg>
