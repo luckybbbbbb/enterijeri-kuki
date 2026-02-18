@@ -9,7 +9,7 @@ export function Hero() {
     >
       {/* Background Image */}
       <Image
-        src="/images/hero-bg.svg"
+        src="/images/background-enterier.jpg"
         alt="Premium auto enterijer"
         fill
         className="object-cover"
