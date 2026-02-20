@@ -6,6 +6,7 @@ import { WhyChooseUs } from "@/components/why-choose-us";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { StructuredData } from "@/components/structured-data";
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </main>
   );
 }
