@@ -66,6 +66,13 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(1200px 680px at 12% -12%, rgb(227 0 22 / 0.16), transparent 62%),
+      radial-gradient(900px 520px at 88% 0%, rgb(255 255 255 / 0.05), transparent 60%),
+      linear-gradient(rgb(255 255 255 / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 255 255 / 0.03) 1px, transparent 1px);
+    background-size: auto, auto, 44px 44px, 44px 44px;
+    background-attachment: fixed;
   }
 }
 
