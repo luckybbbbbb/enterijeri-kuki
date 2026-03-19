@@ -136,7 +136,7 @@ export function FinishedGallery() {
             <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               Portfolio
             </span>
-            <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
+            <h2 className="font-serif text-3xl font-bold text-foreground uppercase sm:text-4xl lg:text-5xl">
               Galerija <span className="text-primary">Gotovih Radova</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
@@ -191,7 +191,7 @@ export function FinishedGallery() {
                     />
                   </button>
                   <div className="flex items-center justify-between p-4">
-                    <h3 className="font-serif text-sm font-semibold text-foreground">{item.title}</h3>
+                    <h3 className="font-serif text-sm font-semibold text-foreground uppercase">{item.title}</h3>
                     <button
                       onClick={() => setModalItem(item)}
                       className="text-xs font-medium uppercase tracking-widest text-primary transition-colors hover:text-gold-light"

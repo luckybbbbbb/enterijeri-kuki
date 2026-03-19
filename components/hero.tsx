@@ -28,7 +28,7 @@ export function Hero() {
           </span>
         </div>
 
-        <h1 className="font-serif text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="font-serif text-4xl font-bold leading-tight tracking-tight text-foreground uppercase sm:text-5xl md:text-6xl lg:text-7xl">
           {"Va\u0161 Automobil."}
           <br />
           <span className="text-primary">{"Va\u0161 Stil."}</span>

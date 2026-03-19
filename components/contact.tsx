@@ -37,7 +37,7 @@ export function Contact() {
           <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             Kontakt
           </span>
-          <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl font-bold text-foreground uppercase sm:text-4xl lg:text-5xl">
             {"Javite Nam"}{" "}
             <span className="text-primary">Se</span>
           </h2>
@@ -53,7 +53,7 @@ export function Contact() {
             }`}
           >
             <div className="glass rounded-xl p-6 sm:p-8">
-              <h3 className="font-serif text-2xl font-bold text-foreground">Brz kontakt</h3>
+              <h3 className="font-serif text-2xl font-bold text-foreground uppercase">Brz kontakt</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 Odaberite kanal koji vam najviše odgovara.
               </p>

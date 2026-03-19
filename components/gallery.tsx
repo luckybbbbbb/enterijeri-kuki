@@ -139,7 +139,7 @@ export function Gallery() {
             <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               Portfolio
             </span>
-            <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
+            <h2 className="font-serif text-3xl font-bold text-foreground uppercase sm:text-4xl lg:text-5xl">
               {"Na\u0161i Radovi"} -{" "}
               <span className="text-primary">Pre i Posle</span>
             </h2>
@@ -195,7 +195,7 @@ export function Gallery() {
                     alt={item.title}
                   />
                   <div className="flex items-center justify-between p-4">
-                    <h3 className="font-serif text-sm font-semibold text-foreground">
+                    <h3 className="font-serif text-sm font-semibold text-foreground uppercase">
                       {item.title}
                     </h3>
                     <button

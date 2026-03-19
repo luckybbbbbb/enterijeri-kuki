@@ -118,7 +118,7 @@ export function WhyChooseUs() {
           <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             {"Za\u0161to Mi"}
           </span>
-          <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl font-bold text-foreground uppercase sm:text-4xl lg:text-5xl">
             Razlozi za{" "}
             <span className="text-primary">Poverenje</span>
           </h2>
@@ -150,7 +150,7 @@ export function WhyChooseUs() {
                   suffix={stat.suffix}
                   shouldAnimate={isVisible}
                 />
-                <h3 className="mt-2 text-base font-semibold text-foreground">
+                <h3 className="mt-2 text-base font-semibold text-foreground uppercase">
                   {stat.label}
                 </h3>
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -168,7 +168,7 @@ export function WhyChooseUs() {
           style={{ transitionDelay: isVisible ? "700ms" : "0ms" }}
         >
           <div className="glass rounded-2xl p-6 sm:p-8">
-            <h3 className="font-serif text-2xl font-bold text-foreground">
+            <h3 className="font-serif text-2xl font-bold text-foreground uppercase">
               Materijali koje koristimo
             </h3>
             <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">

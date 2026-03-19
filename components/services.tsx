@@ -95,7 +95,7 @@ export function Services() {
           <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             {"Šta Radimo"}
           </span>
-          <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl font-bold text-foreground uppercase sm:text-4xl lg:text-5xl">
             {"Na\u0161e"}{" "}
             <span className="text-primary">Usluge</span>
           </h2>
@@ -129,7 +129,7 @@ export function Services() {
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 transition-colors duration-300 group-hover:bg-primary/20">
                   <Icon className="h-7 w-7 text-primary" />
                 </div>
-                <h3 className="mb-3 font-serif text-xl font-semibold text-foreground">
+                <h3 className="mb-3 font-serif text-xl font-semibold text-foreground uppercase">
                   {service.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
