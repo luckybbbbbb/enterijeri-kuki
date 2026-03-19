@@ -3,7 +3,8 @@ import { Instagram, Phone, MapPin } from "lucide-react";
 const quickLinks = [
   { label: "Početna", href: "#pocetna" },
   { label: "Usluge", href: "#usluge" },
-  { label: "Galerija", href: "#galerija" },
+  { label: "Pre i Posle", href: "#pre-i-posle" },
+  { label: "Galerija", href: "#galerija-gotovih-radova" },
   { label: "O Nama", href: "#o-nama" },
   { label: "Kontakt", href: "#kontakt" },
 ];

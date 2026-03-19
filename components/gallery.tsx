@@ -123,7 +123,7 @@ export function Gallery() {
   return (
     <>
       <section
-        id="galerija"
+        id="pre-i-posle"
         ref={sectionRef}
         className="relative bg-muted py-24 sm:py-32"
       >
