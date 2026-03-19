@@ -2,13 +2,11 @@
 
 import {
   Layers,
-  CircleDot,
   Armchair,
   Paintbrush,
   Grip,
   CloudSun,
   Truck,
-  BusFront,
 } from "lucide-react";
 
 const services = [
@@ -19,16 +17,10 @@ const services = [
       "Transformišite enterijer vašeg automobila premium carbon fiber oblogama. Sportski izgled i zaštita originalnih delova.",
   },
   {
-    icon: CircleDot,
-    title: "Presvlačenje volana",
-    description:
-      "Profesionalno presvlačenje volana kožom ili alcantarom. Savršen grip i luksuzan izgled.",
-  },
-  {
     icon: Truck,
-    title: "Presvlačenje volana kamiona",
+    title: "Presvlačenje volana (automobili i kamioni)",
     description:
-      "Posebno istaknuta usluga za firme i flotna vozila. Izdržljivo presvlačenje volana kamiona prirodnom kožom, prilagođeno svakodnevnoj eksploataciji.",
+      "Presvlačenje volana za automobile i kamione prirodnom kožom ili alcantarom. Idealno za privatna i flotna vozila, sa naglaskom na udobnost, grip i dugotrajnost.",
   },
   {
     icon: Armchair,
@@ -38,15 +30,9 @@ const services = [
   },
   {
     icon: Paintbrush,
-    title: "Farbanje enterijera",
+    title: "Farbanje sedišta i enterijera (automobili i autobusi)",
     description:
-      "Profesionalno farbanje plastičnih i kožnih delova enterijera. Osvežite ili potpuno promenite boju.",
-  },
-  {
-    icon: BusFront,
-    title: "Farbanje sedišta autobusa",
-    description:
-      "Usluga za autobuske prevoznike i firme. Obnavljamo izgled sedišta i enterijera autobusa, sa akcentom na dugotrajnost i profesionalan završetak.",
+      "Farbanje i obnova sedišta, plastika i kožnih delova enterijera za automobile i autobuse. Pogodno za privatna vozila, prevoznike i firme.",
   },
   {
     icon: Grip,
