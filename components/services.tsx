@@ -1,6 +1,5 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
 import {
   Layers,
   CircleDot,
@@ -64,29 +63,6 @@ const services = [
 ];
 
 export function Services() {
-  const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = Number(entry.target.getAttribute("data-index"));
-          if (entry.isIntersecting) {
-            setVisibleCards((prev) => new Set(prev).add(index));
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    cardsRef.current.forEach((card) => {
-      if (card) observer.observe(card);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section id="usluge" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -107,24 +83,12 @@ export function Services() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = service.icon;
-            const isVisible = visibleCards.has(index);
             return (
               <div
                 key={service.title}
-                ref={(el) => {
-                  cardsRef.current[index] = el;
-                }}
-                data-index={index}
-                className={`glass brand-glow-hover group cursor-pointer rounded-xl p-8 transition-all duration-500 hover:border-primary/30 ${
-                  isVisible
-                    ? "animate-fade-in-up"
-                    : "opacity-0 translate-y-8"
-                }`}
-                style={{
-                  animationDelay: isVisible ? `${index * 100}ms` : undefined,
-                }}
+                className="glass brand-glow-hover group cursor-pointer rounded-xl p-8 transition-all duration-300 hover:border-primary/30"
               >
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 transition-colors duration-300 group-hover:bg-primary/20">
                   <Icon className="h-7 w-7 text-primary" />
