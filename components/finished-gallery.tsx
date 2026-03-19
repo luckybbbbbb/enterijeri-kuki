@@ -156,7 +156,7 @@ export function FinishedGallery() {
                 onClick={() => setActiveFilter(tab.value)}
                 className={`rounded-lg px-5 py-2.5 text-xs font-semibold uppercase tracking-widest transition-all duration-300 ${
                   activeFilter === tab.value
-                    ? "bg-[#e30016] text-white gold-glow"
+                    ? "bg-[#e30016] text-white brand-glow"
                     : "bg-card text-muted-foreground hover:bg-charcoal-light hover:text-foreground"
                 }`}
               >
@@ -176,7 +176,7 @@ export function FinishedGallery() {
                   transitionDelay: isVisible ? `${300 + index * 100}ms` : "0ms",
                 }}
               >
-                <div className="glass overflow-hidden rounded-xl transition-all duration-300 gold-glow-hover hover:border-primary/30">
+                <div className="glass overflow-hidden rounded-xl transition-all duration-300 brand-glow-hover hover:border-primary/30">
                   <button
                     onClick={() => setModalItem(item)}
                     className="relative block aspect-[4/3] w-full overflow-hidden text-left"
@@ -194,7 +194,7 @@ export function FinishedGallery() {
                     <h3 className="font-serif text-sm font-semibold text-foreground uppercase">{item.title}</h3>
                     <button
                       onClick={() => setModalItem(item)}
-                      className="text-xs font-medium uppercase tracking-widest text-primary transition-colors hover:text-gold-light"
+                      className="text-xs font-medium uppercase tracking-widest text-primary transition-colors hover:text-[#ff2a3d]"
                     >
                       Uvećaj
                     </button>

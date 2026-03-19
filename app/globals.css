@@ -53,9 +53,9 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-gold: #e30016;
-  --color-gold-light: #ff2a3d;
-  --color-gold-dark: #b30012;
+  --color-brand: #e30016;
+  --color-brand-light: #ff2a3d;
+  --color-brand-dark: #b30012;
   --color-charcoal: #1a1a1a;
   --color-charcoal-light: #2a2a2a;
 }
@@ -99,11 +99,11 @@ html {
   animation: fade-in-up 0.7s ease-out forwards;
 }
 
-.gold-glow {
+.brand-glow {
   box-shadow: 0 0 20px rgba(227, 0, 22, 0.2);
 }
 
-.gold-glow-hover:hover {
+.brand-glow-hover:hover {
   box-shadow: 0 0 30px rgba(227, 0, 22, 0.35);
 }
 

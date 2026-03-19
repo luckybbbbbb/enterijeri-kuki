@@ -60,7 +60,7 @@ export function Contact() {
               <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <a
                   href="tel:+381649534534"
-                  className="gold-glow-hover flex items-center justify-center gap-2 rounded-lg bg-[#e30016] px-5 py-3 text-sm font-semibold uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#ff2a3d] sm:col-span-2"
+                  className="brand-glow-hover flex items-center justify-center gap-2 rounded-lg bg-[#e30016] px-5 py-3 text-sm font-semibold uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#ff2a3d] sm:col-span-2"
                 >
                   <Phone className="h-4 w-4" />
                   Pozovi odmah

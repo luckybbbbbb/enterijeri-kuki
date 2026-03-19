@@ -117,7 +117,7 @@ export function Services() {
                   cardsRef.current[index] = el;
                 }}
                 data-index={index}
-                className={`glass gold-glow-hover group cursor-pointer rounded-xl p-8 transition-all duration-500 hover:border-primary/30 ${
+                className={`glass brand-glow-hover group cursor-pointer rounded-xl p-8 transition-all duration-500 hover:border-primary/30 ${
                   isVisible
                     ? "animate-fade-in-up"
                     : "opacity-0 translate-y-8"

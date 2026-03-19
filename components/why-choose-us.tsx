@@ -131,7 +131,7 @@ export function WhyChooseUs() {
             return (
               <div
                 key={stat.label}
-                className={`glass gold-glow-hover rounded-xl p-8 text-center transition-all duration-700 hover:border-primary/30 ${
+                className={`glass brand-glow-hover rounded-xl p-8 text-center transition-all duration-700 hover:border-primary/30 ${
                   isVisible
                     ? "translate-y-0 opacity-100"
                     : "translate-y-8 opacity-0"
