@@ -163,7 +163,7 @@ export function Gallery() {
                 onClick={() => setActiveFilter(tab.value)}
                 className={`rounded-lg px-5 py-2.5 text-xs font-semibold uppercase tracking-widest transition-all duration-300 ${
                   activeFilter === tab.value
-                    ? "bg-primary text-primary-foreground gold-glow"
+                    ? "bg-[#e30016] text-white gold-glow"
                     : "bg-card text-muted-foreground hover:bg-charcoal-light hover:text-foreground"
                 }`}
               >

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
@@ -34,11 +35,15 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a href="#pocetna" className="flex items-center gap-2">
-          <span className="font-serif text-xl font-bold tracking-wide text-foreground sm:text-2xl">
-            ENTERIJERI{" "}
-            <span className="text-primary">KUKI</span>
-          </span>
+        <a href="#pocetna" className="flex items-center gap-3" aria-label="Enterijeri Kuki - Početna">
+          <Image
+            src="/images/logo_color.svg"
+            alt="Enterijeri Kuki logo"
+            width={163}
+            height={160}
+            className="h-14 w-auto sm:h-16"
+            priority
+          />
         </a>
 
         {/* Desktop Nav */}
@@ -57,7 +62,7 @@ export function Navbar() {
         {/* Desktop CTA */}
         <a
           href="tel:+381649534534"
-          className="hidden items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:bg-gold-light lg:flex"
+          className="hidden items-center gap-2 rounded-lg bg-[#e30016] px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#ff2a3d] lg:flex"
         >
           <Phone className="h-4 w-4" />
           064/9-534-534
@@ -89,7 +94,7 @@ export function Navbar() {
             ))}
             <a
               href="tel:+381649534534"
-              className="mt-6 flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+              className="mt-6 flex items-center justify-center gap-2 rounded-lg bg-[#e30016] px-5 py-3 text-sm font-semibold text-white"
             >
               <Phone className="h-4 w-4" />
               064/9-534-534

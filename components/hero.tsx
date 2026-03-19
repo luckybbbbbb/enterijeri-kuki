@@ -43,7 +43,7 @@ export function Hero() {
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href="#usluge"
-            className="gold-glow-hover w-full rounded-lg bg-primary px-8 py-4 text-sm font-semibold uppercase tracking-widest text-primary-foreground transition-all duration-300 hover:bg-gold-light sm:w-auto"
+            className="gold-glow-hover w-full rounded-lg bg-[#e30016] px-8 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#ff2a3d] sm:w-auto"
           >
             {"Na\u0161e Usluge"}
           </a>

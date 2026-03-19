@@ -100,7 +100,12 @@ export const metadata: Metadata = {
     images: ["/images/background-enterier.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/images/favicon-logo.svg", type: "image/svg+xml" },
+      { url: "/images/logo_black.svg", media: "(prefers-color-scheme: light)" },
+      { url: "/images/logo_color.svg", media: "(prefers-color-scheme: dark)" },
+      { url: "/favicon.ico" },
+    ],
     apple: "/apple-touch-icon.png",
   },
   manifest: "/manifest.json",

@@ -10,19 +10,19 @@
   --card-foreground: #f5f5f5;
   --popover: #1a1a1a;
   --popover-foreground: #f5f5f5;
-  --primary: #c9a84c;
-  --primary-foreground: #0a0a0a;
+  --primary: #e30016;
+  --primary-foreground: #f5f5f5;
   --secondary: #1a1a1a;
   --secondary-foreground: #f5f5f5;
   --muted: #111111;
   --muted-foreground: #999999;
-  --accent: #c9a84c;
-  --accent-foreground: #0a0a0a;
+  --accent: #e30016;
+  --accent-foreground: #f5f5f5;
   --destructive: #ef4444;
   --destructive-foreground: #f5f5f5;
   --border: #2a2a2a;
   --input: #2a2a2a;
-  --ring: #c9a84c;
+  --ring: #e30016;
   --radius: 0.5rem;
 }
 
@@ -53,9 +53,9 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-gold: #c9a84c;
-  --color-gold-light: #d4b85e;
-  --color-gold-dark: #a8893d;
+  --color-gold: #e30016;
+  --color-gold-light: #ff2a3d;
+  --color-gold-dark: #b30012;
   --color-charcoal: #1a1a1a;
   --color-charcoal-light: #2a2a2a;
 }
@@ -100,22 +100,69 @@ html {
 }
 
 .gold-glow {
-  box-shadow: 0 0 20px rgba(201, 168, 76, 0.15);
+  box-shadow: 0 0 20px rgba(227, 0, 22, 0.2);
 }
 
 .gold-glow-hover:hover {
-  box-shadow: 0 0 30px rgba(201, 168, 76, 0.3);
+  box-shadow: 0 0 30px rgba(227, 0, 22, 0.35);
 }
 
 .glass {
   background: rgba(26, 26, 26, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(201, 168, 76, 0.1);
+  border: 1px solid rgba(227, 0, 22, 0.18);
 }
 
 .glass-nav {
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+}
+
+/* Brand color hard overrides to keep all primary utilities red */
+:root {
+  --primary: #e30016 !important;
+  --accent: #e30016 !important;
+  --ring: #e30016 !important;
+}
+
+.text-primary {
+  color: #e30016 !important;
+}
+
+.bg-primary {
+  background-color: #e30016 !important;
+}
+
+.border-primary {
+  border-color: #e30016 !important;
+}
+
+.bg-primary\/10 {
+  background-color: rgb(227 0 22 / 0.1) !important;
+}
+
+.bg-primary\/20 {
+  background-color: rgb(227 0 22 / 0.2) !important;
+}
+
+.border-primary\/30 {
+  border-color: rgb(227 0 22 / 0.3) !important;
+}
+
+.border-primary\/40 {
+  border-color: rgb(227 0 22 / 0.4) !important;
+}
+
+.hover\:bg-primary\/10:hover {
+  background-color: rgb(227 0 22 / 0.1) !important;
+}
+
+.hover\:border-primary:hover {
+  border-color: #e30016 !important;
+}
+
+.hover\:text-primary:hover {
+  color: #e30016 !important;
 }
