@@ -1,11 +1,11 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import { Users, Gem, ShieldCheck, Clock } from "lucide-react";
+import { Instagram, Gem, Clock } from "lucide-react";
 
 const stats = [
   {
-    icon: Users,
+    icon: Instagram,
     value: 14000,
     suffix: "+",
     label: "Instagram pratilaca",
@@ -17,13 +17,6 @@ const stats = [
     suffix: "%",
     label: "Kvalitetni materijali",
     description: "Samo premium koža i materijali",
-  },
-  {
-    icon: ShieldCheck,
-    value: 5,
-    suffix: " god.",
-    label: "Garancija na rad",
-    description: "Stojimo iza svakog projekta",
   },
   {
     icon: Clock,
@@ -125,7 +118,7 @@ export function WhyChooseUs() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
