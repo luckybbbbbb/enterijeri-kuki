@@ -34,6 +34,21 @@ const stats = [
   },
 ];
 
+const materialHighlights = [
+  {
+    title: "Alcantara",
+    detail: "Originalna italijanska alcantara za crna neba i premium detalje.",
+  },
+  {
+    title: "Prirodna koža - Made in Italy",
+    detail: "Za volane i sedišta koristimo prirodnu kožu vrhunskog kvaliteta.",
+  },
+  {
+    title: "Boxmark i Wollsdorf (Austrija)",
+    detail: "Premium automobilske kože koje ispunjavaju OEM standarde.",
+  },
+];
+
 function AnimatedCounter({
   value,
   suffix,
@@ -144,6 +159,38 @@ export function WhyChooseUs() {
               </div>
             );
           })}
+        </div>
+
+        <div
+          className={`mt-12 transition-all duration-700 ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+          }`}
+          style={{ transitionDelay: isVisible ? "700ms" : "0ms" }}
+        >
+          <div className="glass rounded-2xl p-6 sm:p-8">
+            <h3 className="font-serif text-2xl font-bold text-foreground">
+              Materijali koje koristimo
+            </h3>
+            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Kvalitet radova zavisi od kvaliteta materijala. Zato biramo proverene premium
+              brendove i prirodne materijale koji traju.
+            </p>
+            <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
+              {materialHighlights.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-xl border border-border/60 bg-card/40 p-5"
+                >
+                  <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+                    {item.title}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {item.detail}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -8,6 +8,8 @@ import {
   Paintbrush,
   Grip,
   CloudSun,
+  Truck,
+  BusFront,
 } from "lucide-react";
 
 const services = [
@@ -24,6 +26,12 @@ const services = [
       "Profesionalno presvlačenje volana kožom ili alcantarom. Savršen grip i luksuzan izgled.",
   },
   {
+    icon: Truck,
+    title: "Presvlačenje volana kamiona",
+    description:
+      "Posebno istaknuta usluga za firme i flotna vozila. Izdržljivo presvlačenje volana kamiona prirodnom kožom, prilagođeno svakodnevnoj eksploataciji.",
+  },
+  {
     icon: Armchair,
     title: "Presvlačenje sedišta",
     description:
@@ -34,6 +42,12 @@ const services = [
     title: "Farbanje enterijera",
     description:
       "Profesionalno farbanje plastičnih i kožnih delova enterijera. Osvežite ili potpuno promenite boju.",
+  },
+  {
+    icon: BusFront,
+    title: "Farbanje sedišta autobusa",
+    description:
+      "Usluga za autobuske prevoznike i firme. Obnavljamo izgled sedišta i enterijera autobusa, sa akcentom na dugotrajnost i profesionalan završetak.",
   },
   {
     icon: Grip,
