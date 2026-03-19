@@ -1,19 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Playfair_Display } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import "./globals.css";
 
 const SITE_URL = "https://enterijerikuki.rs";
 
-const dmSans = DM_Sans({
+const inter = Inter({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-dm-sans",
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-playfair",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -124,7 +119,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="sr" className={`${dmSans.variable} ${playfair.variable}`}>
+    <html lang="sr" className={inter.variable}>
       <body className="font-sans antialiased">
         <GoogleAnalytics />
         {children}
