@@ -182,7 +182,7 @@ export function FinishedGallery() {
                   transitionDelay: isVisible ? `${300 + index * 100}ms` : "0ms",
                 }}
               >
-                <div className="glass overflow-hidden rounded-xl transition-all duration-300 brand-glow-hover hover:border-primary/30">
+                <div className="glass flex h-full flex-col overflow-hidden rounded-xl transition-all duration-300 brand-glow-hover hover:border-primary/30">
                   <button
                     onClick={() => setModalItem(item)}
                     className="relative block aspect-[4/3] w-full overflow-hidden text-left"
@@ -196,8 +196,10 @@ export function FinishedGallery() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </button>
-                  <div className="flex items-center justify-between p-4">
-                    <h3 className="font-serif text-sm font-semibold text-foreground uppercase">{item.title}</h3>
+                  <div className="flex min-h-[56px] items-center justify-between gap-3 p-4">
+                    <h3 className="line-clamp-2 font-serif text-sm font-semibold uppercase leading-snug text-foreground">
+                      {item.title}
+                    </h3>
                     <button
                       onClick={() => setModalItem(item)}
                       className="text-xs font-medium uppercase tracking-widest text-primary transition-colors hover:text-[#ff2a3d]"

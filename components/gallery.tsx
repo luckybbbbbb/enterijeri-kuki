@@ -188,14 +188,14 @@ export function Gallery() {
                     : "0ms",
                 }}
               >
-                <div className="glass overflow-hidden rounded-xl transition-all duration-300 brand-glow-hover hover:border-primary/30">
+                <div className="glass flex h-full flex-col overflow-hidden rounded-xl transition-all duration-300 brand-glow-hover hover:border-primary/30">
                   <ComparisonSlider
                     beforeImage={item.beforeImage}
                     afterImage={item.afterImage}
                     alt={item.title}
                   />
-                  <div className="flex items-center justify-between p-4">
-                    <h3 className="font-serif text-sm font-semibold text-foreground uppercase">
+                  <div className="flex min-h-[56px] items-center justify-between gap-3 p-4">
+                    <h3 className="line-clamp-2 font-serif text-sm font-semibold uppercase leading-snug text-foreground">
                       {item.title}
                     </h3>
                     <button

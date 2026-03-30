@@ -173,3 +173,11 @@ html {
 .hover\:text-primary:hover {
   color: #e30016 !important;
 }
+
+/* Utility: clamp text to N lines (no plugin needed) */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
