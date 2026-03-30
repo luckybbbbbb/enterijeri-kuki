@@ -9,16 +9,18 @@ export function Hero() {
     >
       {/* Background Image */}
       <Image
-        src="/images/background-enterier.jpg"
-        alt="Premium auto enterijer"
+        src="/images/kuki-cover-2560.jpg"
+        alt="Enterijeri Kuki cover"
         fill
-        className="object-cover"
+        className="object-cover object-[50%_20%] saturate-[0.85] contrast-[1.05] sm:object-center"
         priority
-        quality={90}
+        quality={80}
+        sizes="100vw"
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/65 to-background" />
+      <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
