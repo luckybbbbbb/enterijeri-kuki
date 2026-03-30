@@ -8,12 +8,12 @@ export function Hero() {
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
       {/* Background Image */}
-      {/* Mobile background (cleaner crop) */}
+      {/* Mobile background (no crop, show full artwork) */}
       <Image
-        src="/images/kuki-cover-mobile-1080x1920.jpg"
+        src="/images/kuki-cover-2560.jpg"
         alt="Enterijeri Kuki cover"
         fill
-        className="object-cover object-top sm:hidden"
+        className="object-contain object-center scale-[0.9] sm:hidden"
         priority
         quality={80}
         sizes="100vw"
