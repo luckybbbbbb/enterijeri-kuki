@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@/components/google-analytics";
+import { GaHashTracker } from "@/components/ga-hash-tracker";
 import "./globals.css";
 
 const SITE_URL = "https://enterijerikuki.rs";
@@ -70,6 +71,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? {
+        verification: {
+          google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+        },
+      }
+    : {}),
   openGraph: {
     title: "Enterijeri Kuki | Premium Auto Enterijeri - Novi Pazar",
     description:
@@ -122,6 +130,7 @@ export default function RootLayout({
     <html lang="sr" className={inter.variable}>
       <body className="font-sans antialiased">
         <GoogleAnalytics />
+        <GaHashTracker />
         {children}
         <Analytics />
       </body>

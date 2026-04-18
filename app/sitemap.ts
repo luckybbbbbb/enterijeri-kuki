@@ -1,32 +1,18 @@
 import type { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://enterijerikuki.rs";
+const baseUrl = "https://enterijerikuki.rs";
 
+/**
+ * Jedna URL adresa za jednostrani sajt — Google ignoriše fragment (#) u sitemap-u,
+ * pa ne navodimo više istu stranicu sa različitim hash-ovima.
+ */
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
-    },
-    {
-      url: `${baseUrl}/#usluge`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#galerija`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#kontakt`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
   ];
 }
