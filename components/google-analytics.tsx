@@ -1,7 +1,7 @@
 import Script from "next/script";
+import { GA_MEASUREMENT_ID } from "@/lib/ga-measurement-id";
 
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-
+/** Google tag (gtag.js) — ekvivalent zvaničnog snippeta, uz page_path + hash za jednostrani sajt. */
 export function GoogleAnalytics() {
   if (!GA_MEASUREMENT_ID) return null;
 

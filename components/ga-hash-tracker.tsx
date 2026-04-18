@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-
-const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+import { GA_MEASUREMENT_ID as GA_ID } from "@/lib/ga-measurement-id";
 
 declare global {
   interface Window {
