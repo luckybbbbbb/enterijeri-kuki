@@ -192,6 +192,8 @@ export function FinishedGallery() {
                       src={item.image}
                       alt={item.title}
                       fill
+                      loading="lazy"
+                      fetchPriority="low"
                       className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
@@ -245,8 +247,9 @@ export function FinishedGallery() {
                 src={modalItem.image}
                 alt={modalItem.title}
                 fill
+                priority
                 className="object-cover"
-                sizes="100vw"
+                sizes="min(100vw, 1280px)"
               />
             </div>
             <p className="mt-4 text-center font-serif text-lg font-semibold text-foreground">

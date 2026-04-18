@@ -7,27 +7,24 @@ export function Hero() {
       id="pocetna"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
-      {/* Mobile background (portrait asset) */}
-      <Image
-        src="/images/mobile-phone-background.jpeg"
-        alt="Enterijeri Kuki cover"
-        fill
-        className="object-cover object-center sm:hidden"
-        priority
-        quality={80}
-        sizes="100vw"
-      />
-      {/* Desktop background */}
-      <Image
-        src="/images/kuki-cover-2560.jpg"
-        alt="Enterijeri Kuki cover"
-        fill
-        className="hidden object-cover object-[50%_20%] sm:block sm:object-center"
-        priority
-        quality={80}
-        sizes="100vw"
-      />
+      {/* <picture>: jedan resurs po širini ekrana, bez dva paralelna priority učitavanja */}
+      <div className="absolute inset-0">
+        <picture className="relative block h-full min-h-full w-full">
+          <source
+            media="(max-width: 639px)"
+            srcSet="/images/mobile-phone-background.jpeg"
+          />
+          <Image
+            src="/images/kuki-cover-2560.jpg"
+            alt="Enterijeri Kuki cover"
+            fill
+            className="object-cover object-center sm:object-[50%_20%] sm:object-center"
+            priority
+            quality={80}
+            sizes="100vw"
+          />
+        </picture>
+      </div>
 
       {/* No dark overlay (keep original look) */}
 

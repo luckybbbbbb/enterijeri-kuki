@@ -21,8 +21,9 @@ export function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const opts = { passive: true } as const;
+    window.addEventListener("scroll", handleScroll, opts);
+    return () => window.removeEventListener("scroll", handleScroll, opts);
   }, []);
 
   return (

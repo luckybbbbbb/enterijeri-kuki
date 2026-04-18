@@ -57,6 +57,7 @@ function AnimatedCounter({
     if (!shouldAnimate) return;
 
     let startTime: number | null = null;
+    let rafId = 0;
     const duration = 2000;
 
     const animate = (timestamp: number) => {
@@ -66,11 +67,12 @@ function AnimatedCounter({
       setCount(Math.floor(eased * value));
 
       if (progress < 1) {
-        requestAnimationFrame(animate);
+        rafId = requestAnimationFrame(animate);
       }
     };
 
-    requestAnimationFrame(animate);
+    rafId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafId);
   }, [shouldAnimate, value]);
 
   return (
