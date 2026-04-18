@@ -106,6 +106,33 @@ html {
   animation: fade-in-up 0.7s ease-out forwards;
 }
 
+@keyframes gallery-handle-nudge {
+  0%,
+  100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.gallery-coming-soon-handle {
+  animation: gallery-handle-nudge 2.6s ease-in-out infinite;
+}
+
+@keyframes coming-soon-tape {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.gallery-coming-soon-tape {
+  animation: coming-soon-tape 18s linear infinite;
+}
+
 .brand-glow {
   box-shadow: 0 0 20px rgba(227, 0, 22, 0.2);
 }
