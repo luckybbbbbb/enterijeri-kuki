@@ -12,6 +12,7 @@ import { ScrollToTop } from "@/components/scroll-to-top";
 export default function Home() {
   return (
     <main>
+      <h1 className="sr-only">Enterijer kola Novi Pazar | Enterijeri Kuki</h1>
       <StructuredData />
       <Navbar />
       <Hero />
