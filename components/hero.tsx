@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 
 export function Hero() {
@@ -14,14 +13,14 @@ export function Hero() {
             media="(max-width: 639px)"
             srcSet="/images/mobile-phone-background.jpeg"
           />
-          <Image
+          <img
             src="/images/kuki-cover-2560.jpg"
             alt="Enterijeri Kuki cover"
-            fill
-            className="object-cover object-center sm:object-[50%_20%] sm:object-center"
-            priority
-            quality={80}
-            sizes="100vw"
+            width={2560}
+            height={2253}
+            loading="eager"
+            fetchPriority="high"
+            className="h-full w-full object-cover object-center sm:object-[50%_20%] sm:object-center"
           />
         </picture>
       </div>

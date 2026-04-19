@@ -191,10 +191,12 @@ export function FinishedGallery() {
                     <Image
                       src={item.image}
                       alt={item.title}
-                      fill
-                      loading="lazy"
-                      fetchPriority="low"
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      width={1200}
+                      height={900}
+                      priority={index < 3}
+                      loading={index < 3 ? "eager" : "lazy"}
+                      fetchPriority={index < 3 ? "high" : "low"}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </button>
@@ -246,9 +248,10 @@ export function FinishedGallery() {
               <Image
                 src={modalItem.image}
                 alt={modalItem.title}
-                fill
+                width={1600}
+                height={1200}
                 priority
-                className="object-cover"
+                className="h-full w-full object-cover"
                 sizes="min(100vw, 1280px)"
               />
             </div>
