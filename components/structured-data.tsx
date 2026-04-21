@@ -7,11 +7,23 @@ export function StructuredData() {
     description:
       "Premium presvlačenje i restauracija auto enterijera. Carbonsko presvlačenje, presvlačenje volana, sedišta, neba i farbanje enterijera.",
     url: "https://enterijerikuki.rs",
+    hasMap: "https://www.google.com/maps",
     telephone: "+381649534534",
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+381649534534",
+        contactType: "customer service",
+        areaServed: "RS",
+        availableLanguage: ["sr", "en"],
+      },
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Palih Boraca 12",
       addressLocality: "Novi Pazar",
+      addressRegion: "Raški okrug",
+      postalCode: "36300",
       addressCountry: "RS",
     },
     geo: {
