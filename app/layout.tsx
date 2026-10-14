@@ -3,9 +3,8 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { GaHashTracker } from "@/components/ga-hash-tracker";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
-
-const SITE_URL = "https://enterijerikuki.rs";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -55,8 +54,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/background-enterier.jpg",
-        width: 1200,
-        height: 630,
+        width: 1240,
+        height: 800,
         alt: "Enterijeri Kuki - Premium Auto Enterijeri",
       },
     ],
@@ -73,9 +72,7 @@ export const metadata: Metadata = {
       { url: "/images/favicon-logo.svg", type: "image/svg+xml" },
       { url: "/images/logo_black.svg", media: "(prefers-color-scheme: light)" },
       { url: "/images/logo_color.svg", media: "(prefers-color-scheme: dark)" },
-      { url: "/favicon.ico" },
     ],
-    apple: "/apple-touch-icon.png",
   },
   manifest: "/manifest.json",
   category: "automotive",

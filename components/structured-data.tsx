@@ -1,3 +1,5 @@
+import { SITE_URL } from "@/lib/site";
+
 export function StructuredData() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -6,8 +8,9 @@ export function StructuredData() {
     alternateName: "Enterijeri Kuki Novi Pazar",
     description:
       "Premium presvlačenje i restauracija auto enterijera. Carbonsko presvlačenje, presvlačenje volana, sedišta, neba i farbanje enterijera.",
-    url: "https://enterijerikuki.rs",
-    hasMap: "https://www.google.com/maps",
+    url: SITE_URL,
+    hasMap:
+      "https://www.google.com/maps/search/?api=1&query=Enterijeri+Kuki+Palih+Boraca+12+Novi+Pazar",
     telephone: "+381649534534",
     contactPoint: [
       {
@@ -46,7 +49,7 @@ export function StructuredData() {
       },
     ],
     sameAs: ["https://instagram.com/enterijeri.kuki"],
-    image: "https://enterijerikuki.rs/images/background-enterier.jpg",
+    image: `${SITE_URL}/images/background-enterier.jpg`,
     priceRange: "$$",
     areaServed: {
       "@type": "GeoCircle",

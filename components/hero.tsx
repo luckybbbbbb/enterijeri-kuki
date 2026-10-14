@@ -15,7 +15,7 @@ export function Hero() {
           />
           <img
             src="/images/kuki-cover-2560.jpg"
-            alt="Enterijeri Kuki cover"
+            alt="Presvučen enterijer automobila — Enterijeri Kuki, Novi Pazar"
             width={2560}
             height={2253}
             loading="eager"

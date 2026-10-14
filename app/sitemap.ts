@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const baseUrl = "https://enterijerikuki.rs";
+import { SITE_URL } from "@/lib/site";
 
 /**
  * Jedna URL adresa za jednostrani sajt — Google ignoriše fragment (#) u sitemap-u,
@@ -9,7 +8,7 @@ const baseUrl = "https://enterijerikuki.rs";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: baseUrl,
+      url: SITE_URL,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
