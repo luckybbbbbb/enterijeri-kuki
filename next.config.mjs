@@ -4,7 +4,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    // Next/Vercel servira WebP u veličini koja odgovara ekranu (SVG ide bez obrade)
+    formats: ["image/webp"],
   },
 }
 

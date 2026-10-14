@@ -193,9 +193,7 @@ export function FinishedGallery() {
                       alt={item.title}
                       width={1200}
                       height={900}
-                      priority={index < 3}
-                      loading={index < 3 ? "eager" : "lazy"}
-                      fetchPriority={index < 3 ? "high" : "low"}
+                      loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
