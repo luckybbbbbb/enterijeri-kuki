@@ -1,7 +1,8 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import { Phone, MessageCircle, Instagram } from "lucide-react";
+import { Phone, MessageCircle, Instagram, Facebook, MapPin } from "lucide-react";
+import { FACEBOOK_URL, GOOGLE_MAPS_URL, INSTAGRAM_URL } from "@/lib/site";
 
 export function Contact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -82,13 +83,31 @@ export function Contact() {
                   Viber
                 </a>
                 <a
-                  href="https://instagram.com/enterijeri.kuki"
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-lg border border-primary/40 bg-transparent px-5 py-3 text-sm font-semibold uppercase tracking-widest text-foreground transition-all duration-300 hover:border-primary hover:bg-primary/10"
+                >
+                  <Instagram className="h-4 w-4 text-primary" />
+                  Instagram
+                </a>
+                <a
+                  href={FACEBOOK_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-lg border border-primary/40 bg-transparent px-5 py-3 text-sm font-semibold uppercase tracking-widest text-foreground transition-all duration-300 hover:border-primary hover:bg-primary/10"
+                >
+                  <Facebook className="h-4 w-4 text-primary" />
+                  Facebook
+                </a>
+                <a
+                  href={GOOGLE_MAPS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 rounded-lg border border-primary/40 bg-transparent px-5 py-3 text-sm font-semibold uppercase tracking-widest text-foreground transition-all duration-300 hover:border-primary hover:bg-primary/10 sm:col-span-2"
                 >
-                  <Instagram className="h-4 w-4 text-primary" />
-                  Instagram
+                  <MapPin className="h-4 w-4 text-primary" />
+                  Palih Boraca 12 — Mapa
                 </a>
               </div>
               <p className="mt-5 text-center text-sm text-muted-foreground">

@@ -1,4 +1,5 @@
-import { Instagram, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Phone, MapPin } from "lucide-react";
+import { FACEBOOK_URL, GOOGLE_MAPS_URL, INSTAGRAM_URL } from "@/lib/site";
 import { services } from "@/lib/services";
 
 const quickLinks = [
@@ -27,13 +28,22 @@ export function Footer() {
               godina iskustva u transformaciji vozila.
             </p>
             <a
-              href="https://instagram.com/enterijeri.kuki"
+              href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+              className="mt-5 flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
             >
               <Instagram className="h-5 w-5" />
               @enterijeri.kuki
+            </a>
+            <a
+              href={FACEBOOK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              <Facebook className="h-5 w-5" />
+              EnterijeriKuki
             </a>
           </div>
 
@@ -88,10 +98,15 @@ export function Footer() {
                 <Phone className="h-4 w-4 text-primary" />
                 064/9-534-534
               </a>
-              <div className="flex items-start gap-3 text-sm text-muted-foreground">
+              <a
+                href={GOOGLE_MAPS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+              >
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 Palih Boraca 12, Novi Pazar
-              </div>
+              </a>
             </div>
           </div>
         </div>

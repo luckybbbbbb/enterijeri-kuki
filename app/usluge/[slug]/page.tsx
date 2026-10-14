@@ -12,7 +12,7 @@ import {
   getService,
   services,
 } from "@/lib/services";
-import { SITE_URL } from "@/lib/site";
+import { GOOGLE_MAPS_URL, SITE_URL } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -278,10 +278,15 @@ export default async function ServicePage({ params }: Props) {
             <h2 className="mb-5 font-serif text-xl font-semibold text-foreground uppercase">
               Gde se nalazimo
             </h2>
-            <p className="flex items-start gap-3 text-sm text-muted-foreground">
+            <a
+              href={GOOGLE_MAPS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
               Palih Boraca 12, 36300 Novi Pazar, Srbija
-            </p>
+            </a>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               Ako dolazite iz drugog grada ili iz inostranstva, javite se
               unapred da dogovorimo termin.

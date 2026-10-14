@@ -1,4 +1,4 @@
-import { SITE_URL } from "@/lib/site";
+import { FACEBOOK_URL, GOOGLE_MAPS_URL, INSTAGRAM_URL, SITE_URL } from "@/lib/site";
 import { SERVICE_CITIES, SERVICE_COUNTRIES, services } from "@/lib/services";
 
 export function StructuredData() {
@@ -10,8 +10,7 @@ export function StructuredData() {
     description:
       "Premium presvlačenje i restauracija auto enterijera. Carbonsko presvlačenje, presvlačenje volana, sedišta, neba i farbanje enterijera.",
     url: SITE_URL,
-    hasMap:
-      "https://www.google.com/maps/search/?api=1&query=Enterijeri+Kuki+Palih+Boraca+12+Novi+Pazar",
+    hasMap: GOOGLE_MAPS_URL,
     telephone: "+381649534534",
     contactPoint: [
       {
@@ -49,7 +48,7 @@ export function StructuredData() {
         closes: "15:00",
       },
     ],
-    sameAs: ["https://instagram.com/enterijeri.kuki"],
+    sameAs: [INSTAGRAM_URL, FACEBOOK_URL, GOOGLE_MAPS_URL],
     image: `${SITE_URL}/images/background-enterier.jpg`,
     priceRange: "$$",
     areaServed: [
