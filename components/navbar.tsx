@@ -5,12 +5,12 @@ import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
-  { label: "Početna", href: "#pocetna" },
-  { label: "Usluge", href: "#usluge" },
-  { label: "Pre i Posle", href: "#pre-i-posle" },
-  { label: "Galerija", href: "#galerija-gotovih-radova" },
-  { label: "O Nama", href: "#o-nama" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Početna", href: "/#pocetna" },
+  { label: "Usluge", href: "/#usluge" },
+  { label: "Pre i Posle", href: "/#pre-i-posle" },
+  { label: "Galerija", href: "/#galerija-gotovih-radova" },
+  { label: "O Nama", href: "/#o-nama" },
+  { label: "Kontakt", href: "/#kontakt" },
 ];
 
 export function Navbar() {
@@ -36,7 +36,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a href="#pocetna" className="flex items-center gap-3" aria-label="Enterijeri Kuki - Početna">
+        <a href="/" className="flex items-center gap-3" aria-label="Enterijeri Kuki - Početna">
           <Image
             src="/images/logo_color.svg"
             alt="Enterijeri Kuki logo"

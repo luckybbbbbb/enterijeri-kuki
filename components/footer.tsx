@@ -1,22 +1,15 @@
 import { Instagram, Phone, MapPin } from "lucide-react";
+import { services } from "@/lib/services";
 
 const quickLinks = [
-  { label: "Početna", href: "#pocetna" },
-  { label: "Usluge", href: "#usluge" },
-  { label: "Pre i Posle", href: "#pre-i-posle" },
-  { label: "Galerija", href: "#galerija-gotovih-radova" },
-  { label: "O Nama", href: "#o-nama" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Početna", href: "/#pocetna" },
+  { label: "Usluge", href: "/#usluge" },
+  { label: "Pre i Posle", href: "/#pre-i-posle" },
+  { label: "Galerija", href: "/#galerija-gotovih-radova" },
+  { label: "O Nama", href: "/#o-nama" },
+  { label: "Kontakt", href: "/#kontakt" },
 ];
 
-const serviceLinks = [
-  "Carbonsko presvlačenje",
-  "Presvlačenje volana",
-  "Presvlačenje sedišta",
-  "Farbanje enterijera",
-  "Presvlačenje ručice menjača",
-  "Presvlačenje neba",
-];
 
 export function Footer() {
   return (
@@ -69,13 +62,13 @@ export function Footer() {
               Usluge
             </h4>
             <ul className="flex flex-col gap-3">
-              {serviceLinks.map((service) => (
-                <li key={service}>
+              {services.map((service) => (
+                <li key={service.slug}>
                   <a
-                    href="#usluge"
+                    href={`/usluge/${service.slug}`}
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
-                    {service}
+                    {service.name}
                   </a>
                 </li>
               ))}

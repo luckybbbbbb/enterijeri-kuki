@@ -1,4 +1,5 @@
 import { SITE_URL } from "@/lib/site";
+import { SERVICE_CITIES, SERVICE_COUNTRIES, services } from "@/lib/services";
 
 export function StructuredData() {
   const localBusinessSchema = {
@@ -51,74 +52,22 @@ export function StructuredData() {
     sameAs: ["https://instagram.com/enterijeri.kuki"],
     image: `${SITE_URL}/images/background-enterier.jpg`,
     priceRange: "$$",
-    areaServed: {
-      "@type": "GeoCircle",
-      geoMidpoint: {
-        "@type": "GeoCoordinates",
-        latitude: 43.1367,
-        longitude: 20.5122,
-      },
-      geoRadius: "100000",
-    },
+    areaServed: [
+      ...SERVICE_CITIES.map((name) => ({ "@type": "City", name })),
+      ...SERVICE_COUNTRIES.map((name) => ({ "@type": "Country", name })),
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Usluge auto enterijera",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Carbonsko presvlačenje",
-            description:
-              "Premium carbon fiber obloge za enterijer automobila.",
-          },
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.name,
+          description: service.cardDescription,
+          url: `${SITE_URL}/usluge/${service.slug}`,
         },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Presvlačenje volana",
-            description:
-              "Profesionalno presvlačenje volana kožom ili alcantarom.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Presvlačenje sedišta",
-            description:
-              "Kompletna restauracija i presvlačenje sedišta premium materijalima.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Farbanje enterijera",
-            description:
-              "Profesionalno farbanje plastičnih i kožnih delova enterijera.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Presvlačenje neba",
-            description:
-              "Zamena oštećenog ili opuštenog neba novim materijalima.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Presvlačenje ručice menjača",
-            description:
-              "Presvlačenje ručice menjača premium kožom sa šavovima po izboru.",
-          },
-        },
-      ],
+      })),
     },
   };
 

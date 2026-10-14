@@ -7,46 +7,30 @@ import {
   Grip,
   CloudSun,
   Truck,
+  ChevronRight,
+  type LucideIcon,
 } from "lucide-react";
+import { services } from "@/lib/services";
 
-const services = [
-  {
-    icon: Layers,
-    title: "Carbonsko presvlačenje",
-    description:
-      "Transformišite enterijer vašeg automobila premium carbon fiber oblogama. Sportski izgled i zaštita originalnih delova.",
-  },
-  {
-    icon: Truck,
-    title: "Presvlačenje volana (automobili i kamioni)",
-    description:
-      "Presvlačenje volana za automobile i kamione prirodnom kožom ili alcantarom. Idealno za privatna i flotna vozila, sa naglaskom na udobnost, grip i dugotrajnost.",
-  },
-  {
-    icon: Armchair,
-    title: "Presvlačenje sedišta",
-    description:
-      "Kompletna restauracija i presvlačenje sedišta premium materijalima. Vraćamo vaša sedišta u fabričko stanje ili bolje.",
-  },
-  {
-    icon: Paintbrush,
-    title: "Farbanje sedišta i enterijera (automobili i autobusi)",
-    description:
-      "Farbanje i obnova sedišta, plastika i kožnih delova enterijera za automobile i autobuse. Pogodno za privatna vozila, prevoznike i firme.",
-  },
-  {
-    icon: Grip,
-    title: "Presvlačenje ručice menjača",
-    description:
-      "Presvucite ručicu menjača premium kožom sa šavovima po vašem izboru. Detalj koji pravi razliku.",
-  },
-  {
-    icon: CloudSun,
-    title: "Presvlačenje neba",
-    description:
-      "Zamena oštećenog ili opuštenog neba (tavanice) novim materijalima. Čist i profesionalan završetak.",
-  },
+const icons: Record<string, LucideIcon> = {
+  "carbonsko-presvlacenje": Layers,
+  "presvlacenje-volana": Truck,
+  "presvlacenje-sedista": Armchair,
+  "farbanje-enterijera": Paintbrush,
+  "presvlacenje-rucice-menjaca": Grip,
+  "presvlacenje-neba": CloudSun,
+};
+
+/** Redosled kartica na početnoj */
+const order = [
+  "carbonsko-presvlacenje",
+  "presvlacenje-volana",
+  "presvlacenje-sedista",
+  "farbanje-enterijera",
+  "presvlacenje-rucice-menjaca",
+  "presvlacenje-neba",
 ];
+const homeServices = order.map((slug) => services.find((s) => s.slug === slug)!);
 
 export function Services() {
   return (
@@ -69,23 +53,28 @@ export function Services() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => {
-            const Icon = service.icon;
+          {homeServices.map((service) => {
+            const Icon = icons[service.slug];
             return (
-              <div
-                key={service.title}
-                className="glass brand-glow-hover group cursor-pointer rounded-xl p-8 transition-all duration-300 hover:border-primary/30"
+              <a
+                key={service.slug}
+                href={`/usluge/${service.slug}`}
+                className="glass brand-glow-hover group block rounded-xl p-8 transition-all duration-300 hover:border-primary/30"
               >
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 transition-colors duration-300 group-hover:bg-primary/20">
                   <Icon className="h-7 w-7 text-primary" />
                 </div>
                 <h3 className="mb-3 font-serif text-xl font-semibold text-foreground uppercase">
-                  {service.title}
+                  {service.name}
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  {service.description}
+                  {service.cardDescription}
                 </p>
-              </div>
+                <span className="mt-5 inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-widest text-primary">
+                  Saznaj više
+                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </a>
             );
           })}
         </div>
